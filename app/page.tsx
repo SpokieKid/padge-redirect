@@ -29,15 +29,15 @@ export default function Home() {
   }, [deviceType]);
 
   if (deviceType === null) {
-    return <div>加载中...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gray-100">
       {deviceType === "Other" ? (
         <div className="bg-white rounded-3xl shadow-lg p-8 max-w-sm w-full text-center">
-          <h2 className="text-2xl font-bold mb-4">请在移动设备上打开此页面</h2>
-          <p className="text-lg">我们将会将您重定向到正确的页面。</p>
+          <h2 className="text-2xl font-bold mb-4">Please open this page on a mobile device</h2>
+          <p className="text-lg">We will then redirect you to the correct page.</p>
         </div>
       ) : null}
     </main>

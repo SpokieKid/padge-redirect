@@ -22,9 +22,9 @@ export default function Home() {
 
   useEffect(() => {
     if (deviceType === "iOS") {
-      window.location.href = "https://testflight.apple.com/join/Kd1zGEEH";
+      window.location.href = "https://apps.apple.com/us/app/padge/id6476600623";
     } else if (deviceType === "Android") {
-      window.location.href = "https://expo.dev/artifacts/eas/hCQ35KrHiUuoJRKUfD9qdo.apk"; // 请替换为实际的Android链接
+      window.location.href = "https://play.google.com/store/apps/details?id=com.padge.mobile"; // 请替换为实际的Android链接
     }
   }, [deviceType]);
 
